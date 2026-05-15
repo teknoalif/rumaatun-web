@@ -14,7 +14,7 @@ const Footer = () => {
               RU<span className="text-sky-400">MAATUN</span> <span className="text-xl ml-2">رُمَاةٌ</span>
             </h2>
             <p className="text-sm leading-relaxed text-slate-400">
-              Platform belajar Matematika dan Coding tepat sasaran. Membimbing siswa SD, SMP, hingga SMA untuk membidik masa depan dengan ilmu.
+              Platform belajar Matematika, Coding, Arabic, dan Bisnis tepat sasaran. Membimbing siswa SD, SMP, hingga SMA untuk membidik masa depan dengan ilmu.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-slate-800 mt-12 pt-8 text-center text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} Rumaatun.my.id - Dibuat dengan semangat oleh Kak Alif dan Kak Azhar.</p>
+          <p>© {new Date().getFullYear()} Rumaatun.my.id - Dibuat dengan semangat oleh Alif, Azhar, Radivan, dan Banyak Orang.</p>
         </div>
       </div>
     </footer>

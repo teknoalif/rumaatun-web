@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24"> {/* Tinggi h-20 diubah ke h-24 agar lebih lega karena ada 2 baris teks */}
           
           {/* Logo & Branding */}
           <Link href="/" className="flex items-center gap-3 group">
@@ -38,37 +38,66 @@ const Navbar = () => {
 
           {/* Navigation Links - Desktop */}
           <div className="hidden md:flex items-center gap-8">
+            
+            {/* Matematika */}
             <Link 
               href="/belajar/math" 
-              className={`font-medium transition-colors ${
-                isActive('/belajar/math') ? 'text-sky-600' : 'text-slate-600 hover:text-sky-600'
-              }`}
+              className="flex flex-col items-center group"
             >
-              Matematika
+              <span className={`font-semibold transition-colors ${isActive('/belajar/math') ? 'text-sky-600' : 'text-slate-600 group-hover:text-sky-600'}`}>
+                Matematika
+              </span>
+              <span className={`text-[11px] font-medium transition-colors ${isActive('/belajar/math') ? 'text-sky-400' : 'text-slate-400 group-hover:text-sky-400'}`}>
+                الرِّيَاضِيَّات
+              </span>
             </Link>
+
+            {/* Coding */}
             <Link 
               href="/belajar/coding" 
-              className={`font-medium transition-colors ${
-                isActive('/belajar/coding') ? 'text-sky-600' : 'text-slate-600 hover:text-sky-600'
-              }`}
+              className="flex flex-col items-center group"
             >
-              Coding
+              <span className={`font-semibold transition-colors ${isActive('/belajar/coding') ? 'text-sky-600' : 'text-slate-600 group-hover:text-sky-600'}`}>
+                Coding
+              </span>
+              <span className={`text-[11px] font-medium transition-colors ${isActive('/belajar/coding') ? 'text-emerald-500/70' : 'text-slate-400 group-hover:text-emerald-500/70'}`}>
+                الْبَرْمَجَة
+              </span>
             </Link>
-            {/* Navigasi Arabic Baru */}
+
+            {/* Arabic */}
             <Link 
               href="/belajar/arabic" 
-              className={`font-medium transition-colors ${
-                isActive('/belajar/arabic') ? 'text-sky-600' : 'text-slate-600 hover:text-sky-600'
-              }`}
+              className="flex flex-col items-center group"
             >
-              Arabic
+              <span className={`font-semibold transition-colors ${isActive('/belajar/arabic') ? 'text-sky-600' : 'text-slate-600 group-hover:text-sky-600'}`}>
+                Arabic
+              </span>
+              <span className={`text-[11px] font-medium transition-colors ${isActive('/belajar/arabic') ? 'text-amber-500/70' : 'text-slate-400 group-hover:text-amber-500/70'}`}>
+                للُّغَة الْعَرَبِيَّة
+              </span>
             </Link>
             
+            {/* Bisnis */}
+            <Link 
+              href="/belajar/bisnis" 
+              className="flex flex-col items-center group"
+            >
+              <span className={`font-semibold transition-colors ${isActive('/belajar/bisnis') ? 'text-sky-600' : 'text-slate-600 group-hover:text-sky-600'}`}>
+                Bisnis
+              </span>
+              <span className={`text-[11px] font-medium transition-colors ${isActive('/belajar/bisnis') ? 'text-violet-500/70' : 'text-slate-400 group-hover:text-violet-500/70'}`}>
+                التِّجَارَة
+              </span>
+            </Link>
+            
+            {/* Button Mulai Belajar */}
             <Link 
               href="/belajar/math" 
-              className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-md shadow-sky-100"
+              className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2 rounded-2xl font-semibold transition-all shadow-md shadow-sky-100 flex flex-col items-center group"
             >
-              Mulai Belajar
+              <span className="leading-tight">Mulai Belajar</span>
+              <span className="text-[10px] font-light opacity-80">تَعَلُّم</span>
             </Link>
           </div>
 

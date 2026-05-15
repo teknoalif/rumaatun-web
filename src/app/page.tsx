@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Target, BookOpen, Code, ArrowRight, Languages, User, ShieldCheck, Cpu, ExternalLink } from 'lucide-react';
+import { Target, BookOpen, Code, ArrowRight, Languages, User, ShieldCheck, ExternalLink, Briefcase } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
                 Membidik Masa Depan dengan <span className="text-sky-500 italic">Ilmu</span>
               </h1>
               <p className="text-xl text-slate-600 max-w-lg leading-relaxed">
-                Platform pembelajaran video Matematika, Coding, dan Bahasa Arab khusus untuk siswa SD hingga SMA. Sederhanakan konsep rumit bersama Kak Alif, Kak Azhar, dan Kak Radivan.
+                Platform video pembelajaran Matematika, Coding, Arabic, dan Bisnis. Sederhanakan konsep rumit bersama Kak Alif, Kak Azhar, dan Kak Radivan.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link 
@@ -61,7 +61,7 @@ export default function Home() {
             <p className="text-slate-500 mt-2 italic font-medium">رُمَاةٌ - Jadilah Pemanah yang Mahir dalam Ilmu</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Math Card */}
             <Link href="/belajar/math" className="group">
               <div className="bg-white p-8 rounded-3xl border border-slate-100 hover:border-sky-500 transition-all hover:shadow-2xl hover:shadow-sky-100 h-full flex flex-col">
@@ -69,10 +69,10 @@ export default function Home() {
                   <BookOpen size={32} />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-3">Matematika</h3>
-                <p className="text-slate-600 mb-6 leading-relaxed flex-grow">
-                  Dari Dasar, OSN, hingga persiapan UTBK. Taklukkan angka dengan metode yang menyenangkan.
+                <p className="text-slate-600 mb-6 leading-relaxed flex-grow text-sm">
+                  Fokus Dasar SD-SMA, Persiapan OSN 2027, TKA 2026, hingga Strategi UTBK 2027.
                 </p>
-                <div className="flex items-center gap-2 text-sky-600 font-bold">
+                <div className="flex items-center gap-2 text-sky-600 font-bold text-sm">
                   Lihat Katalog <ArrowRight size={18} />
                 </div>
               </div>
@@ -85,10 +85,10 @@ export default function Home() {
                   <Code size={32} />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-3">Coding</h3>
-                <p className="text-slate-600 mb-6 leading-relaxed flex-grow">
-                  Belajar Python, JavaScript, dan logika pemrograman untuk membangun aplikasi pertamamu.
+                <p className="text-slate-600 mb-6 leading-relaxed flex-grow text-sm">
+                  Belajar Python, JavaScript, dan logika pemrograman untuk membangun masa depan digital.
                 </p>
-                <div className="flex items-center gap-2 text-emerald-600 font-bold">
+                <div className="flex items-center gap-2 text-emerald-600 font-bold text-sm">
                   Lihat Katalog <ArrowRight size={18} />
                 </div>
               </div>
@@ -101,10 +101,26 @@ export default function Home() {
                   <Languages size={32} />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-3">Arabic</h3>
-                <p className="text-slate-600 mb-6 leading-relaxed flex-grow">
-                  Kuasai Nahwu dan Shorof. Fondasi utama untuk memahami teks Arab secara mendalam dan tepat sasaran.
+                <p className="text-slate-600 mb-6 leading-relaxed flex-grow text-sm">
+                  Kuasai Nahwu dan Shorof. Fondasi utama memahami teks Arab secara mendalam dan tepat.
                 </p>
-                <div className="flex items-center gap-2 text-amber-600 font-bold">
+                <div className="flex items-center gap-2 text-amber-600 font-bold text-sm">
+                  Lihat Katalog <ArrowRight size={18} />
+                </div>
+              </div>
+            </Link>
+
+            {/* Business Card */}
+            <Link href="/belajar/bisnis" className="group">
+              <div className="bg-white p-8 rounded-3xl border border-slate-100 hover:border-violet-500 transition-all hover:shadow-2xl hover:shadow-violet-100 h-full flex flex-col">
+                <div className="w-16 h-16 bg-violet-50 rounded-2xl flex items-center justify-center text-violet-500 mb-6 group-hover:bg-violet-500 group-hover:text-white transition-colors">
+                  <Briefcase size={32} />
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-3">Bisnis</h3>
+                <p className="text-slate-600 mb-6 leading-relaxed flex-grow text-sm">
+                  Strategi bisnis online dan manajemen produk fisik. Siapkan kemandirian finansialmu.
+                </p>
+                <div className="flex items-center gap-2 text-violet-600 font-bold text-sm">
                   Lihat Katalog <ArrowRight size={18} />
                 </div>
               </div>
@@ -114,77 +130,76 @@ export default function Home() {
       </section>
 
       {/* 3. FOUNDERS SECTION */}
-<section className="py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-4">
-    <div className="text-center mb-16">
-      <h2 className="text-3xl font-bold text-slate-900 italic">Founder Rumaatun</h2>
-      <p className="text-slate-500 mt-2 font-medium">Sinergi Ahli untuk Pendidikan Masa Depan</p>
-    </div>
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 italic">Founder Rumaatun</h2>
+            <p className="text-slate-500 mt-2 font-medium">Sinergi Ahli untuk Pendidikan Masa Depan</p>
+          </div>
 
-    <div className="grid md:grid-cols-3 gap-8">
-      {/* Alif Rezky */}
-      <div className="group bg-slate-50 rounded-[2.5rem] p-8 border border-transparent hover:border-sky-200 hover:bg-white hover:shadow-xl transition-all duration-500 text-center flex flex-col">
-        <div className="relative w-24 h-24 mx-auto mb-6">
-          <div className="w-full h-full bg-sky-100 rounded-full flex items-center justify-center text-sky-600 border-4 border-white shadow-sm">
-            <User size={48} />
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Alif Rezky */}
+            <div className="group bg-slate-50 rounded-[2.5rem] p-8 border border-transparent hover:border-sky-200 hover:bg-white hover:shadow-xl transition-all duration-500 text-center flex flex-col">
+              <div className="relative w-24 h-24 mx-auto mb-6">
+                <div className="w-full h-full bg-sky-100 rounded-full flex items-center justify-center text-sky-600 border-4 border-white shadow-sm font-bold">
+                  AR
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900">Alif Rezky</h3>
+              <p className="text-sky-600 font-semibold mb-4 text-xs tracking-widest uppercase">Math & Business Mentor</p>
+              <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                Pendidik Matematika dan praktisi Bisnis Online. Fokus membantu siswa menguasai logika angka dan strategi kemandirian bisnis.
+              </p>
+              <a href="https://kakalif.my.id" target="_blank" className="text-xs text-slate-400 hover:text-sky-600 inline-flex items-center gap-1 justify-center transition-colors">
+                kakalif.my.id <ExternalLink size={12} />
+              </a>
+            </div>
+
+            {/* Azhar Faturohman Ahidin */}
+            <div className="group bg-slate-50 rounded-[2.5rem] p-8 border border-transparent hover:border-emerald-200 hover:bg-white hover:shadow-xl transition-all duration-500 text-center flex flex-col">
+              <div className="relative w-24 h-24 mx-auto mb-6">
+                <div className="w-full h-full bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 border-4 border-white shadow-sm">
+                  <ShieldCheck size={48} />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900">Azhar Faturohman</h3>
+              <p className="text-emerald-600 font-semibold mb-4 text-xs tracking-widest uppercase">Coding & Cyber Security</p>
+              <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                Pakar infrastruktur cloud dan keamanan siber. Memastikan setiap baris kode Rumaatun aman dan berstandar industri.
+              </p>
+              <a href="https://azharfa.cloud" target="_blank" className="text-xs text-slate-400 hover:text-emerald-600 inline-flex items-center gap-1 justify-center transition-colors">
+                azharfa.cloud <ExternalLink size={12} />
+              </a>
+            </div>
+
+            {/* Radivan */}
+            <div className="group bg-slate-50 rounded-[2.5rem] p-8 border border-transparent hover:border-amber-200 hover:bg-white hover:shadow-xl transition-all duration-500 text-center flex flex-col">
+              <div className="relative w-24 h-24 mx-auto mb-6">
+                <div className="w-full h-full bg-amber-100 rounded-full flex items-center justify-center text-amber-600 border-4 border-white shadow-sm">
+                  <Languages size={48} />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900">Radivan</h3>
+              <p className="text-amber-600 font-semibold mb-4 text-xs tracking-widest uppercase">Linguistic Expert</p>
+              <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                Ahli bahasa (Arabic). Membimbing siswa memahami literatur asing secara sistematis untuk membuka jendela dunia.
+              </p>
+              <a href="https://www.instagram.com/radivantiravi" target="_blank" className="text-xs text-slate-400 hover:text-amber-600 inline-flex items-center gap-1 justify-center transition-colors">
+                @radivantiravi <ExternalLink size={12} />
+              </a>
+            </div>
           </div>
         </div>
-        <h3 className="text-xl font-bold text-slate-900">Alif Rezky</h3>
-        <p className="text-sky-600 font-semibold mb-4 text-xs tracking-widest uppercase">Mathematics Educator & Author</p>
-        <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
-          Ahli matematika dan penulis buku pendidikan. Berdedikasi menyederhanakan logika angka agar setiap siswa bisa membidik jawaban dengan tepat.
-        </p>
-        <a href="https://kakalif.my.id" target="_blank" className="text-xs text-slate-400 hover:text-sky-600 inline-flex items-center gap-1 justify-center">
-          kakalif.my.id <ExternalLink size={12} />
-        </a>
-      </div>
-
-      {/* Azhar Faturohman Ahidin */}
-      <div className="group bg-slate-50 rounded-[2.5rem] p-8 border border-transparent hover:border-emerald-200 hover:bg-white hover:shadow-xl transition-all duration-500 text-center flex flex-col">
-        <div className="relative w-24 h-24 mx-auto mb-6">
-          <div className="w-full h-full bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 border-4 border-white shadow-sm">
-            <ShieldCheck size={48} />
-          </div>
-        </div>
-        <h3 className="text-xl font-bold text-slate-900">Azhar Faturohman</h3>
-        <p className="text-emerald-600 font-semibold mb-4 text-xs tracking-widest uppercase">Coding & Cyber Security</p>
-        <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
-          Pakar pemrograman dan keamanan siber. Memastikan kurikulum coding Rumaatun relevan dengan industri dan platform yang aman digunakan.
-        </p>
-        <a href="https://azharfa.cloud" target="_blank" className="text-xs text-slate-400 hover:text-emerald-600 inline-flex items-center gap-1 justify-center">
-          azharfa.cloud <ExternalLink size={12} />
-        </a>
-      </div>
-
-      {/* Radivan */}
-      <div className="group bg-slate-50 rounded-[2.5rem] p-8 border border-transparent hover:border-amber-200 hover:bg-white hover:shadow-xl transition-all duration-500 text-center flex flex-col">
-        <div className="relative w-24 h-24 mx-auto mb-6">
-          <div className="w-full h-full bg-amber-100 rounded-full flex items-center justify-center text-amber-600 border-4 border-white shadow-sm">
-            <Languages size={48} />
-          </div>
-        </div>
-        <h3 className="text-xl font-bold text-slate-900">Radivan</h3>
-        <p className="text-amber-600 font-semibold mb-4 text-xs tracking-widest uppercase">Linguistic Expert (Arabic & English)</p>
-        <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
-          Ahli bahasa yang mengampu materi Arabic dan English. Membantu siswa menguasai literatur asing dengan metode yang sistematis dan mudah dipahami.
-        </p>
-        <a href="https://www.instagram.com/radivantiravi" target="_blank" className="text-xs text-slate-400 hover:text-emerald-600 inline-flex items-center gap-1 justify-center">
-          instagram.com/radivantiravi <ExternalLink size={12} />
-        </a>
-        <span className="text-xs text-slate-300 italic">Membuka Jendela Dunia</span>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* 4. CTA SECTION */}
       <section className="py-24">
         <div className="max-w-5xl mx-auto px-4">
           <div className="bg-slate-900 rounded-[3rem] p-8 md:p-16 text-center text-white relative overflow-hidden">
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Siap Belajar Bersama Kak Alif, Kak Azhar, dan Kak Radivan?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Siap Membidik Masa Depan?</h2>
               <p className="text-slate-400 mb-10 max-w-xl mx-auto">
-                Dapatkan akses gratis ke ratusan video pembelajaran Matematika, Coding, dan Arabic. Ada pertanyaan? Langsung diskusikan dengan kami.
+                Dapatkan akses ke materi pilihan Matematika, Coding, Arabic, dan Bisnis. Ada pertanyaan? Langsung diskusikan dengan kami.
               </p>
               
               <div className="flex flex-wrap justify-center gap-4">

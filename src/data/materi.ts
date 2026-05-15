@@ -59,7 +59,7 @@ export const DATA_VIDEO = [
     level: 'TKA SD',
     duration: '14:50',
     thumbnail: '/images/math.svg',
-    videoUrl: 'https://www.youtube.com/watch?v=URmOV9L9bJQ'
+    videoUrl: 'https://youtu.be/URmOV9L9bJQ'
   },
 
   // --- KATEGORI LAINNYA ---
@@ -81,16 +81,16 @@ export const DATA_VIDEO = [
     level: 'Dasar',
     duration: '15:00',
     thumbnail: '/images/arabic.svg',
-    videoUrl: 'https://youtu.be/Sg5YKhKfweg'
+    videoUrl: '#' //radivan punya
   },
   {
     id: 9,
     slug: 'bisnis-online-pemula',
-    title: 'Membangun Ekosistem Bisnis Online',
+    title: 'Kenalan dengan Founder Rumaatun',
     category: 'bisnis',
     level: 'Umum',
-    duration: '18:30',
+    duration: '03:00',
     thumbnail: '/images/bisnis.svg',
-    videoUrl: 'https://youtu.be/Sg5YKhKfweg'
+    videoUrl: 'https://youtu.be/Vz8nHz9nOM4' 
   }
 ];
